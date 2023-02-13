@@ -97,7 +97,7 @@ while running:
                     if grid[int((y + (row + 1) * 20) / 20)][int((x + col * 20) / 20)] != 0:
                         landed = True
                         
-        if landed or y + len(tetromino) * 20 >= 400:
+        if landed:
         # Copy the tetromino to the grid
             for row in range(len(tetromino)):
                 for col in range(len(tetromino[row])):
